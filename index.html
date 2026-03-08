@@ -19,15 +19,15 @@
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-y: auto;   /* Allow vertical scroll */
             background: linear-gradient(135deg, #1a1a2e, #16213e, #1a1a2e);
             font-family: 'Poppins', sans-serif;
             color: white;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
 
         /* Container Utama */
@@ -37,6 +37,8 @@
             position: relative;
             padding: 20px;
             max-width: 600px;
+            width: 90%; /* Responsive width */
+            margin: 20px 0; /* Add margin for scrolling */
         }
 
         /* Layar Pembuka */
@@ -116,7 +118,7 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             min-height: 100px;
-            font-size: 0.5rem;
+            font-size: 0.85rem;
             line-height: 1.5;
         }
 
@@ -175,9 +177,16 @@
 
         /* Responsive */
         @media (max-width: 480px) {
-            h1 { font-size: 2.5rem; }
-            .photo-frame { width: 150px; height: 150px; }
-            .message-box { font-size: 0.85rem; padding: 15px; }
+            h1 { font-size: 2rem; margin: 5px 0; }
+            .photo-frame { width: 140px; height: 140px; margin-bottom: 15px; }
+            .message-box { 
+                font-size: 0.8rem; 
+                padding: 15px; 
+                line-height: 1.4;
+                max-height: 40vh; /* Limit height and scroll if too long inside box */
+                overflow-y: auto;
+            }
+            .btn-start { padding: 12px 30px; font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -337,5 +346,4 @@
 
     </script>
 </body>
-
 </html><source src="lagu-kita.mp3" type="audio/mp3">

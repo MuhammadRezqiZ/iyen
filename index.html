@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Sayang ❤️</title>
+    <title>Happy Birthday Iyenn ❤️</title>
     <!-- Import Font Romantis -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <!-- Library Confetti -->
@@ -21,7 +21,9 @@
             padding: 0;
             overflow-x: hidden; /* Prevent horizontal scroll */
             overflow-y: auto;   /* Allow vertical scroll */
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #1a1a2e);
+            background: 
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url('https://i.ibb.co.com/n8Q270X6/photo-2026-03-09-14-43-43.jpg') center / cover no-repeat fixed;
             font-family: 'Poppins', sans-serif;
             color: white;
             min-height: 100vh;
@@ -195,7 +197,7 @@
     <!-- Musik Latar (Ganti source dengan link lagu favorit kalian) -->
     <!-- Contoh menggunakan file lokal: src="lagu-kita.mp3" -->
     <audio id="bg-music" loop>
-        <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-guitar-arpeggio-666.mp3" type="audio/mp3">
+        <source src="https://archive.org/download/VirgounSuratCintaUntukStarla/Virgoun%20-%20Surat%20Cinta%20Untuk%20Starla.mp3" type="audio/mp3">
         Browser kamu tidak mendukung audio.
     </audio>
 
@@ -216,7 +218,7 @@
             <!-- <a href="https://ibb.co.com/qF1qp7rk"><img src="https://i.ibb.co.com/bRdwXQKz/iyenn.jpg" alt="iyenn" border="0"></a> -->
         </div>
         
-        <h1 id="greeting">Happy Birthday!</h1>
+        <h1 id="greeting" style="margin-bottom: 20px;">Happy Birthday!</h1>
         
         <div class="message-box">
             <p id="typewriter-text"></p>
@@ -233,27 +235,12 @@
         const pesanRomantis = [
             "Hai, Iyenn...",
             "Selamat ulang tahun ya! 🎉",
-            "Di hari spesial ini, aku cuma mau bilang...",
-            // "Terima kasih sudah lahir ke dunia dan jadi bagian dari hidupku.",
-            // "Semoga kamu selalu sehat, bahagia, dan tercapai semua impianmu.",
-            // "Aku sayang banget sama kamu ❤️",
-            // "Love you forever!",
-
-            "jujur aku udah lama gak berhubungan dengan siapapun",
-            "dan setelah sekian lama, aku kembali berani untuk",
-            "memulai sebuah hubungan dengan dengan seseorang",
-            "yaitu ikam.",
-            "aku kada tahu hubungan ini akan berjalan mulus atau pupus,",
-            "yang ku tau aku akan menerima apapun hasilnya kedepannya.",
-            "dan aku juga gak tau kenapa orang itu ikam, tapi yang ku tau",
-            "dengan ikam ku merasa aman dan nyaman.", "jadi ku mau ungkapkan perasaan kalo aku suka sama km sejak awal ku melihat ikam,",
-            "ikam boleh nolak perasaan ku, tapi tidak dengan hadiah ku,",
-            "karena hadiah ini tulus dari ku untuk ikam yang telah menemani ku",
-            "selama bulan puasa ini dan tanda bangga ku ke ikam karena",
-            "km sudah berkerja sekeras ini untuk diri ikam sendiri.",
+            "Di hari spesial km ini, aku cuma mau bilang...",
+            "jujur aku udah lama gak berhubungan dengan siapapun dan setelah sekian lama akhirnya aku kembali berani untuk memulai sebuah hubungan dengan seseorang yaitu ikam. aku kada tahu hubungan ini akan berjalan mulus atau pupus, tapi yang ku tau aku akan menerima apapun hasilnya kedepannya. dan aku juga gak tau kenapa orangnya itu ikam, tapi yang ku tau dengan ikam aku merasa aman dan nyaman. jadi aku mau ungkapkan perasaan kalo aku suka sama km sejak awal aku melihat ikam, ikam boleh nolak perasaan ku, tapi tidak dengan hadiah ku, karena hadiah ini tulus dari ku untuk ikam yang sudah menemani ku selama bulan puasa ini dan tanda bangga ku ke ikam karena km sudah berkerja sekeras ini untuk diri ikam sendiri.",
             "Happy Birthday ya Iyen semoga panjang umur dan sehat selalu, I Love U ❤️",
+            " ",
+            "-Muhammad Rezqi. Z"
             
-            "MuhammadRezqiZ2026"
         ];
         
         // --- LOGIKA PROGRAM ---
@@ -320,12 +307,12 @@
                 if (currentChar < pesanRomantis[currentLine].length) {
                     textElement.innerHTML += pesanRomantis[currentLine].charAt(currentChar);
                     currentChar++;
-                    setTimeout(ketikPesan, 50); // Kecepatan ngetik
+                    setTimeout(ketikPesan, 80); // Kecepatan ngetik
                 } else {
                     textElement.innerHTML += "<br>"; // Pindah baris
                     currentLine++;
                     currentChar = 0;
-                    setTimeout(ketikPesan, 700); // Jeda antar baris
+                    setTimeout(ketikPesan, 800); // Jeda antar baris
                 }
             } else {
                 // Selesai ngetik, lempar confetti lagi
@@ -346,4 +333,5 @@
 
     </script>
 </body>
+
 </html><source src="lagu-kita.mp3" type="audio/mp3">
